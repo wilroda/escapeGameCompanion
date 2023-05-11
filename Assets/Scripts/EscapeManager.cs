@@ -10,7 +10,6 @@ public class EscapeManager : MonoBehaviour
     public TextMeshProUGUI _mission;
     public  Image _QR;
     public TMP_InputField _answer;
-
     public Camera _camera;
     
     private float secondsCount;
@@ -28,9 +27,6 @@ public class EscapeManager : MonoBehaviour
     void Update()
     {
         UpdateTimerUI();
-
-        
-
     }
 
     //call this on update
