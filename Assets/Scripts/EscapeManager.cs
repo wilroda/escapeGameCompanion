@@ -33,7 +33,7 @@ public class EscapeManager : MonoBehaviour
     public void UpdateTimerUI(){
         //set timer UI
         secondsCount += Time.deltaTime;
-        _timer.text = string.Format("{0:00}:{1:00}", minuteCount, (int)secondsCount);
+        _timer.text = string.Format("{0:00}:{1:00}:{2:00}", hourCount, minuteCount, (int)secondsCount);
         if(secondsCount >= 60){
             minuteCount++;
             secondsCount = 0;
@@ -45,7 +45,7 @@ public class EscapeManager : MonoBehaviour
 
     public void MissionUpdate()
     {
-        _mission.text = "Mission " + missionCount;
+        _mission.text = "MISSION " + missionCount;
     }
 
     public void Validator()
@@ -65,7 +65,7 @@ public class EscapeManager : MonoBehaviour
                 break;       
 
             case 2:
-                if(_answer.text.ToLower() == "abcde")
+                if(_answer.text.ToLower() == "23")
                 {
                     missionCount++;
                     MissionUpdate();
@@ -77,7 +77,7 @@ public class EscapeManager : MonoBehaviour
                 break;       
 
             case 3:
-                if(_answer.text.ToLower() == "78")
+                if(_answer.text.ToLower() == "abca")
                 {
                     missionCount++;
                     MissionUpdate();
@@ -86,7 +86,54 @@ public class EscapeManager : MonoBehaviour
                 }
                 minuteCount += 3;
                 Debug.Log("Wrong answer, try again!");
-                break;      
+                break;   
+                
+            case 4:
+                if(_answer.text.ToLower() == "radio")
+                {
+                    missionCount++;
+                    MissionUpdate();
+                    Debug.Log("Mission Successful!");
+                    break;       
+                }
+                minuteCount += 3;
+                Debug.Log("Wrong answer, try again!");
+                break;         
+
+            case 5:
+                if(_answer.text.ToLower() == "idho")
+                {
+                    missionCount++;
+                    MissionUpdate();
+                    Debug.Log("Mission Successful!");
+                    break;       
+                }
+                minuteCount += 3;
+                Debug.Log("Wrong answer, try again!");
+                break; 
+
+            case 6:
+                if(_answer.text.ToLower() == "bbaacabbba")
+                {
+                    missionCount++;
+                    MissionUpdate();
+                    Debug.Log("Mission Successful!");
+                    break;       
+                }
+                minuteCount += 3;
+                Debug.Log("Wrong answer, try again!");
+                break;
+            
+            case 7:
+                if(_answer.text.ToLower() == "b")
+                {
+                    MissionUpdate();
+                    Debug.Log("Mission Successful!");
+                    break;       
+                }
+                minuteCount += 3;
+                Debug.Log("Wrong answer, try again!");
+                break;
 
         }
     }
