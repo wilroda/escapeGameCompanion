@@ -806,6 +806,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162298016}
   m_CullTransparentMesh: 1
+--- !u!1 &184048030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 184048033}
+  - component: {fileID: 184048032}
+  - component: {fileID: 184048031}
+  m_Layer: 5
+  m_Name: Answer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &184048031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184048030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 60
+  m_fontSizeBase: 60
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 16
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 4096
+  m_textAlignment: 65535
+  m_characterSpacing: 10
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 3
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 1
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 28.995056, z: 0, w: 27.734436}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &184048032
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184048030}
+  m_CullTransparentMesh: 1
+--- !u!224 &184048033
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184048030}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2005483505}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -11, y: 73.5}
+  m_SizeDelta: {x: 680, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &192555691
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,7 +974,7 @@ RectTransform:
   m_Children:
   - {fileID: 555664975}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -889,7 +1024,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 192555694}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 192555693}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &192555694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1162,9 +1309,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'M
-
-'
+  m_text: M
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1274,7 +1419,7 @@ RectTransform:
   m_Children:
   - {fileID: 235623396}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1324,7 +1469,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 209145063}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 209145062}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &209145063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1691,9 +1848,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'F
-
-'
+  m_text: F
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1802,8 +1957,7 @@ MonoBehaviour:
   _timer: {fileID: 223025830}
   _mission: {fileID: 104580478}
   _QR: {fileID: 1783305955}
-  _answer: {fileID: 205826989}
-  _camera: {fileID: 0}
+  _answer: {fileID: 184048031}
 --- !u!4 &241190573
 Transform:
   m_ObjectHideFlags: 0
@@ -1877,9 +2031,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'L
-
-'
+  m_text: L
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1989,7 +2141,7 @@ RectTransform:
   m_Children:
   - {fileID: 854140812}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2039,7 +2191,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 300101575}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 300101574}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &300101575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2111,7 +2275,7 @@ RectTransform:
   m_Children:
   - {fileID: 1229842499}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2161,7 +2325,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 304221195}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 304221194}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &304221195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2233,7 +2409,7 @@ RectTransform:
   m_Children:
   - {fileID: 1225542979}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2283,7 +2459,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 326699453}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 326699452}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &326699453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2355,7 +2543,7 @@ RectTransform:
   m_Children:
   - {fileID: 268276863}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2405,7 +2593,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 327513261}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 327513260}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &327513261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2477,7 +2677,7 @@ RectTransform:
   m_Children:
   - {fileID: 1962482989}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2527,7 +2727,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 351629373}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 351629372}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &351629373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2599,7 +2811,7 @@ RectTransform:
   m_Children:
   - {fileID: 1448759565}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2649,7 +2861,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 378539135}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 378539134}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &378539135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2746,9 +2970,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'R
-
-'
+  m_text: R
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2926,7 +3148,7 @@ RectTransform:
   m_Children:
   - {fileID: 492409015}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2976,7 +3198,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 511165559}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 511165558}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &511165559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3204,9 +3438,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '0
-
-'
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3316,7 +3548,7 @@ RectTransform:
   m_Children:
   - {fileID: 2001764971}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3366,7 +3598,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 552710792}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 552710791}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &552710792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3463,9 +3707,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'T
-
-'
+  m_text: T
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3575,7 +3817,7 @@ RectTransform:
   m_Children:
   - {fileID: 1087844794}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3625,7 +3867,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 558823546}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 558823545}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &558823546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3722,9 +3976,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '2
-
-'
+  m_text: 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3859,9 +4111,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'P
-
-'
+  m_text: P
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3971,7 +4221,7 @@ RectTransform:
   m_Children:
   - {fileID: 1523134379}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4021,7 +4271,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 600842024}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 600842023}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &600842024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4093,7 +4355,7 @@ RectTransform:
   m_Children:
   - {fileID: 1543879216}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4143,7 +4405,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 610472693}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 610472692}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &610472693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4215,7 +4489,7 @@ RectTransform:
   m_Children:
   - {fileID: 538632203}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4265,7 +4539,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 749931558}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 749931557}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &749931558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4337,7 +4623,7 @@ RectTransform:
   m_Children:
   - {fileID: 1014424185}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4387,7 +4673,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 760283825}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 760283824}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &760283825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4678,9 +4976,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1
-
-'
+  m_text: 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4790,7 +5086,7 @@ RectTransform:
   m_Children:
   - {fileID: 105904589}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4840,7 +5136,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 820614544}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 820614543}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &820614544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4937,9 +5245,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '5
-
-'
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5209,9 +5515,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'K
-
-'
+  m_text: K
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5321,7 +5625,7 @@ RectTransform:
   m_Children:
   - {fileID: 1873368792}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5371,7 +5675,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1014543120}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1014543119}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1014543120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5519,7 +5835,7 @@ RectTransform:
   m_Children:
   - {fileID: 1749065401}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5569,7 +5885,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1041981066}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1041981065}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1041981066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5801,9 +6129,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '6
-
-'
+  m_text: 6
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5898,7 +6224,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1099468174
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6094,9 +6420,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'W
-
-'
+  m_text: W
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6206,7 +6530,7 @@ RectTransform:
   m_Children:
   - {fileID: 1571982106}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6256,7 +6580,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1140668019}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1140668018}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1140668019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6463,7 +6799,7 @@ RectTransform:
   m_Children:
   - {fileID: 570002336}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6513,7 +6849,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1165104708}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1165104707}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1165104708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6610,9 +6958,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'E
-
-'
+  m_text: E
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7017,9 +7363,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '8
-
-'
+  m_text: 8
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7129,7 +7473,7 @@ RectTransform:
   m_Children:
   - {fileID: 1161159601}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7179,7 +7523,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1293973984}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1293973983}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1293973984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7386,7 +7742,7 @@ RectTransform:
   m_Children:
   - {fileID: 2143804627}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7436,7 +7792,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1385118776}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1385118775}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1385118776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7533,9 +7901,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'V
-
-'
+  m_text: V
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7629,7 +7995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1406189592
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7914,9 +8280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'C
-
-'
+  m_text: C
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8161,7 +8525,7 @@ RectTransform:
   m_Children:
   - {fileID: 2098883034}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8211,7 +8575,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1492865193}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1492865192}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1492865193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8283,7 +8659,7 @@ RectTransform:
   m_Children:
   - {fileID: 207156569}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8333,7 +8709,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1506622095}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1506622094}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1506622095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8405,7 +8793,7 @@ RectTransform:
   m_Children:
   - {fileID: 1418680}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8564,9 +8952,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '7
-
-'
+  m_text: 7
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8676,7 +9062,7 @@ RectTransform:
   m_Children:
   - {fileID: 1896480271}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8726,7 +9112,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1523325585}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1523325584}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1523325585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8798,7 +9196,7 @@ RectTransform:
   m_Children:
   - {fileID: 1640679926}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8848,7 +9246,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1541977899}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1541977898}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1541977899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9215,9 +9625,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'B
-
-'
+  m_text: B
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9327,7 +9735,7 @@ RectTransform:
   m_Children:
   - {fileID: 599001475}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9377,7 +9785,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1603118471}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1603118470}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1603118471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9449,7 +9869,7 @@ RectTransform:
   m_Children:
   - {fileID: 800081213}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9499,7 +9919,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1636843401}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1636843400}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1636843401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9706,7 +10138,7 @@ RectTransform:
   m_Children:
   - {fileID: 1123346244}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9756,7 +10188,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1652608784}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1652608783}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1652608784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9828,7 +10272,7 @@ RectTransform:
   m_Children:
   - {fileID: 1939572987}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9878,7 +10322,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1711180060}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1711180059}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1711180060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10085,7 +10541,7 @@ RectTransform:
   m_Children:
   - {fileID: 29556461}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10135,7 +10591,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1757245958}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1757245957}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1757245958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10207,7 +10675,7 @@ RectTransform:
   m_Children:
   - {fileID: 1477664207}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10257,7 +10725,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1778414288}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1778414287}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1778414288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10405,7 +10885,7 @@ RectTransform:
   m_Children:
   - {fileID: 1397329244}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10455,7 +10935,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1820480427}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1820480426}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1820480427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10552,9 +11044,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '9
-
-'
+  m_text: 9
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10664,7 +11154,7 @@ RectTransform:
   m_Children:
   - {fileID: 1598862794}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10714,7 +11204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1877343737}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1877343736}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1877343737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10811,9 +11313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'A
-
-'
+  m_text: A
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10948,9 +11448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Z
-
-'
+  m_text: Z
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11085,9 +11583,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'N
-
-'
+  m_text: N
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11197,7 +11693,7 @@ RectTransform:
   m_Children:
   - {fileID: 1324104991}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11247,7 +11743,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1987321936}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1987321935}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1987321936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11319,7 +11827,7 @@ RectTransform:
   m_Children:
   - {fileID: 162298017}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11369,7 +11877,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2001564977}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2001564976}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2001564977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11466,9 +11986,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'G
-
-'
+  m_text: G
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11575,6 +12093,7 @@ RectTransform:
   m_Children:
   - {fileID: 1257298328}
   - {fileID: 205826988}
+  - {fileID: 184048033}
   - {fileID: 1512711996}
   - {fileID: 610472691}
   - {fileID: 304221193}
@@ -11679,9 +12198,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'H
-
-'
+  m_text: H
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11816,9 +12333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'D
-
-'
+  m_text: D
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11928,7 +12443,7 @@ RectTransform:
   m_Children:
   - {fileID: 1259675193}
   m_Father: {fileID: 2005483505}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11978,7 +12493,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2146685296}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 241190572}
+        m_TargetAssemblyTypeName: EscapeManager, Assembly-CSharp
+        m_MethodName: KeyboardTyping
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2146685295}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2146685296
 MonoBehaviour:
   m_ObjectHideFlags: 0

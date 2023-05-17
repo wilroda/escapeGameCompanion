@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine;
@@ -8,10 +9,9 @@ public class EscapeManager : MonoBehaviour
 {
     public TextMeshProUGUI _timer;
     public TextMeshProUGUI _mission;
-    public  Image _QR;
-    public TMP_InputField _answer;
-    public Camera _camera;
-    
+    public  Image _QR;    
+    public TMP_Text _answer = null;
+    // public Camera _camera;
     private float secondsCount;
     private int minuteCount;
     private int hourCount;
@@ -43,9 +43,35 @@ public class EscapeManager : MonoBehaviour
         }    
     }
 
+    public void KeyboardTyping(Button keyboardButton)
+    {
+        string keyText = keyboardButton.GetComponentInChildren<TMP_Text>().text;
+
+        if(keyText == "del")
+        {
+            string tempGetString = _answer.text;
+
+            if(tempGetString.Length > 0)
+            {
+                string tempString = tempGetString.Substring(0, tempGetString.Length -1);
+                _answer.text = tempString;
+            }
+            
+        }
+        else
+        {
+            _answer.text += keyText;
+        }
+    }
+
     public void MissionUpdate()
     {
         _mission.text = "MISSION " + missionCount;
+    }
+
+    public void ClearText(TMP_Text inputField)
+    {
+        inputField.text = "";
     }
 
     public void Validator()
@@ -57,10 +83,12 @@ public class EscapeManager : MonoBehaviour
                 {
                     missionCount++;
                     MissionUpdate();
+                    ClearText(_answer);
                     Debug.Log("Mission Successful!");
                     break;       
                 }
                 minuteCount += 3;
+                ClearText(_answer);
                 Debug.Log("Wrong answer, try again!");
                 break;       
 
@@ -69,10 +97,12 @@ public class EscapeManager : MonoBehaviour
                 {
                     missionCount++;
                     MissionUpdate();
+                    ClearText(_answer);
                     Debug.Log("Mission Successful!");
                     break;       
                 }
                 minuteCount += 3;
+                ClearText(_answer);
                 Debug.Log("Wrong answer, try again!");
                 break;       
 
@@ -81,10 +111,12 @@ public class EscapeManager : MonoBehaviour
                 {
                     missionCount++;
                     MissionUpdate();
+                    ClearText(_answer);
                     Debug.Log("Mission Successful!");
                     break;       
                 }
                 minuteCount += 3;
+                ClearText(_answer);
                 Debug.Log("Wrong answer, try again!");
                 break;   
                 
@@ -93,10 +125,12 @@ public class EscapeManager : MonoBehaviour
                 {
                     missionCount++;
                     MissionUpdate();
+                    ClearText(_answer);
                     Debug.Log("Mission Successful!");
                     break;       
                 }
                 minuteCount += 3;
+                ClearText(_answer);
                 Debug.Log("Wrong answer, try again!");
                 break;         
 
@@ -105,10 +139,12 @@ public class EscapeManager : MonoBehaviour
                 {
                     missionCount++;
                     MissionUpdate();
+                    ClearText(_answer);
                     Debug.Log("Mission Successful!");
                     break;       
                 }
                 minuteCount += 3;
+                ClearText(_answer);
                 Debug.Log("Wrong answer, try again!");
                 break; 
 
@@ -117,10 +153,12 @@ public class EscapeManager : MonoBehaviour
                 {
                     missionCount++;
                     MissionUpdate();
+                    ClearText(_answer);
                     Debug.Log("Mission Successful!");
                     break;       
                 }
                 minuteCount += 3;
+                ClearText(_answer);
                 Debug.Log("Wrong answer, try again!");
                 break;
             
@@ -128,10 +166,12 @@ public class EscapeManager : MonoBehaviour
                 if(_answer.text.ToLower() == "b")
                 {
                     MissionUpdate();
+                    ClearText(_answer);
                     Debug.Log("Mission Successful!");
                     break;       
                 }
                 minuteCount += 3;
+                ClearText(_answer);
                 Debug.Log("Wrong answer, try again!");
                 break;
 
