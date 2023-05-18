@@ -1954,10 +1954,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e9692e5e459534baf4dc38620e2eec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timer: {fileID: 223025830}
-  _mission: {fileID: 104580478}
+  timer: {fileID: 223025830}
+  mission: {fileID: 104580478}
+  briefing: {fileID: 772196049}
   _QR: {fileID: 1783305955}
-  _answer: {fileID: 184048031}
+  answer: {fileID: 184048031}
 --- !u!4 &241190573
 Transform:
   m_ObjectHideFlags: 0
@@ -4874,7 +4875,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 8
+  m_fontStyle: 0
   m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
