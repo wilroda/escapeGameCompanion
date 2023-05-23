@@ -12,10 +12,22 @@ public class EscapeManager : MonoBehaviour
     public TextMeshProUGUI briefing;
     public  Image _QR;    
     public TMP_Text answer;
+
+    public AudioSource keyboardSound;
+    public AudioSource validSound;
+    public AudioSource invalidSound;
+
+    public GameObject gameScreen;
+    public GameObject endScreen;
+
+    public TextMeshProUGUI gameTime;
+    public TextMeshProUGUI rank;
     private float secondsCount;
     private int minuteCount;
     private int hourCount;
     private int missionCount = 1;
+    private int missionDisplay = 1;
+    private bool gameIsOver = false;
 
     void Start()
     {
@@ -32,16 +44,19 @@ public class EscapeManager : MonoBehaviour
 
     public void UpdateTimerUI(){
 
-        //Set TimerUI
-        secondsCount += Time.deltaTime;
-        timer.text = string.Format("{0:00}:{1:00}:{2:00}", hourCount, minuteCount, (int)secondsCount);
-        if(secondsCount >= 60){
-            minuteCount++;
-            secondsCount = 0;
-        }else if(minuteCount >= 60){
-            hourCount++;
-            minuteCount = 0;
-        }    
+        if(gameIsOver != true)
+        {
+            //Set TimerUI
+            secondsCount += Time.deltaTime;
+            timer.text = string.Format("{0:00}:{1:00}:{2:00}", hourCount, minuteCount, (int)secondsCount);
+            if(secondsCount >= 60){
+                minuteCount++;
+                secondsCount = 0;
+            }else if(minuteCount >= 60){
+                hourCount++;
+                minuteCount = 0;
+            }    
+        }
     }
 
     public void BriefUpdate(int currentMission)
@@ -65,12 +80,12 @@ public class EscapeManager : MonoBehaviour
 
             // Mission 4
             case 4:
-            briefing.text = "TODO - TUNE IN TO DNS";
+            briefing.text = "Check the map and see what DNS location we can contact!";
             break;
 
             // Mission 5
             case 5:
-            briefing.text = "I'm picking up a signal from earth but there is a strong intereferece and I can't quite make out the message.\n\nCheck the noise waveform, it needs to be canceled.";
+            briefing.text = "I'm picking up a signal from earth but there is a strong interference and I can't quite make out the message.\n\nCheck the noise waveform, it needs to be canceled.";
             break;
 
             // Mission 6
@@ -147,7 +162,7 @@ public class EscapeManager : MonoBehaviour
                 break;   
                 
             case 4:
-                if(answer.text.ToLower() == "radio")
+                if(answer.text.ToLower() == "australiaka32.7")
                 {
                     CorrectResponse();
                     break;       
@@ -156,7 +171,7 @@ public class EscapeManager : MonoBehaviour
                 break;         
 
             case 5:
-                if(answer.text.ToLower() == "idho")
+                if(answer.text.ToLower() == "ihdo")
                 {
                     CorrectResponse();
                     break;       
@@ -176,7 +191,7 @@ public class EscapeManager : MonoBehaviour
             case 7:
                 if(answer.text.ToLower() == "b")
                 {
-                    CorrectResponse();
+                    CorrectResponseCheckpoint();
                     break;       
                 }
                 InvalidResponse();
@@ -185,7 +200,7 @@ public class EscapeManager : MonoBehaviour
             case 8:
                 if(answer.text.ToLower() == "cde")
                 {
-                    CorrectResponse();
+                    CorrectResponseCheckpoint();
                     break;       
                 }
                 InvalidResponse();
@@ -194,7 +209,7 @@ public class EscapeManager : MonoBehaviour
             case 9:
                 if(answer.text.ToLower() == "fcbg")
                 {
-                    CorrectResponse();
+                    CorrectResponseCheckpoint();
                     break;       
                 }
                 InvalidResponse();
@@ -203,7 +218,7 @@ public class EscapeManager : MonoBehaviour
             case 10:
                 if(answer.text.ToLower() == "cab")
                 {
-                    CorrectResponse();
+                    CorrectResponseCheckpoint();
                     break;       
                 }
                 InvalidResponse();
@@ -231,6 +246,7 @@ public class EscapeManager : MonoBehaviour
                 if(answer.text.ToLower() == "acrqpo")
                 {
                     CorrectResponse();
+                    GameOver();
                     break;       
                 }
                 InvalidResponse();
@@ -241,7 +257,7 @@ public class EscapeManager : MonoBehaviour
     // Mission Count Update
     public void MissionUpdate()
     {
-        mission.text = "MISSION " + missionCount;
+        mission.text = "MISSION " + missionDisplay;
     }
 
     // On-screen Keyboard
@@ -252,6 +268,7 @@ public class EscapeManager : MonoBehaviour
         if(keyText == "del")
         {
             string tempGetString = answer.text;
+            keyboardSound.Play();
 
             if(tempGetString.Length > 0)
             {
@@ -261,6 +278,7 @@ public class EscapeManager : MonoBehaviour
         }
         else
         {
+            keyboardSound.Play();
             answer.text += keyText;
         }
     }
@@ -274,6 +292,8 @@ public class EscapeManager : MonoBehaviour
     // Invalid Response Logic
     public void InvalidResponse()
     {
+        keyboardSound.Play();
+        invalidSound.Play();
         minuteCount += 3;
         ClearText(answer);
         Debug.Log("Invalide response, try again!");
@@ -282,10 +302,51 @@ public class EscapeManager : MonoBehaviour
     // Correct Response Logic
     public void CorrectResponse()
     {
+        keyboardSound.Play();
+        validSound.Play();
+        missionCount++;
+        missionDisplay++;
+        MissionUpdate();
+        BriefUpdate(missionCount);
+        ClearText(answer);
+        Debug.Log("Mission Successful!");
+    }
+
+    public void CorrectResponseCheckpoint()
+    {
+        keyboardSound.Play();
+        validSound.Play();
         missionCount++;
         MissionUpdate();
         BriefUpdate(missionCount);
         ClearText(answer);
         Debug.Log("Mission Successful!");
+    }
+
+    public void GameOver()
+    {
+        gameIsOver = true;
+
+        gameTime.text = timer.text;
+
+        if(hourCount < 1)
+        {
+            if(minuteCount <= 30)
+                rank.text = "mission specialists";
+            else if (minuteCount <= 40)
+                rank.text = "space pilots";
+            else 
+                rank.text = "space cadets";
+        }
+        else
+            rank.text = "adrift";
+        
+
+        gameScreen.SetActive(false);
+        endScreen.SetActive(true);       
+
+
+        
+        
     }
 }
