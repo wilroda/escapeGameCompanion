@@ -29,6 +29,19 @@ public class EscapeManager : MonoBehaviour
     private int missionDisplay = 1;
     private bool gameIsOver = false;
 
+    public string answer1;
+    public string answer2;
+    public string answer3;
+    public string answer4;
+    public string answer5;
+    public string answer6;
+    public string answer7;
+    public string answer8;
+    public string answer9;
+    public string answer10;
+    public string answer11;
+    public string answer12;
+    public string answer13;
     void Start()
     {
         // Set Mission 1 from the start.
@@ -135,7 +148,7 @@ public class EscapeManager : MonoBehaviour
         switch (missionCount)
         {
             case 1:
-                if(answer.text.ToLower() == "b")
+                if(answer.text.ToLower() == answer1)
                 {
                     CorrectResponse();
                     break;       
@@ -144,7 +157,7 @@ public class EscapeManager : MonoBehaviour
                 break;       
 
             case 2:
-                if(answer.text.ToLower() == "23")
+                if(answer.text.ToLower() == answer2)
                 {
                     CorrectResponse();
                     break;       
@@ -153,7 +166,7 @@ public class EscapeManager : MonoBehaviour
                 break;       
 
             case 3:
-                if(answer.text.ToLower() == "abca")
+                if(answer.text.ToLower() == answer3)
                 {
                     CorrectResponse();
                     break;       
@@ -162,7 +175,7 @@ public class EscapeManager : MonoBehaviour
                 break;   
                 
             case 4:
-                if(answer.text.ToLower() == "australiaka32.7")
+                if(answer.text.ToLower() == answer4)
                 {
                     CorrectResponse();
                     break;       
@@ -171,7 +184,7 @@ public class EscapeManager : MonoBehaviour
                 break;         
 
             case 5:
-                if(answer.text.ToLower() == "ihdo")
+                if(answer.text.ToLower() == answer5)
                 {
                     CorrectResponse();
                     break;       
@@ -180,7 +193,7 @@ public class EscapeManager : MonoBehaviour
                 break; 
 
             case 6:
-                if(answer.text.ToLower() == "bbaacabbba")
+                if(answer.text.ToLower() == answer6)
                 {
                     CorrectResponse();
                     break;       
@@ -189,7 +202,7 @@ public class EscapeManager : MonoBehaviour
                 break;
             
             case 7:
-                if(answer.text.ToLower() == "b")
+                if(answer.text.ToLower() == answer7)
                 {
                     CorrectResponseCheckpoint();
                     break;       
@@ -198,7 +211,7 @@ public class EscapeManager : MonoBehaviour
                 break;
 
             case 8:
-                if(answer.text.ToLower() == "cde")
+                if(answer.text.ToLower() == answer8)
                 {
                     CorrectResponseCheckpoint();
                     break;       
@@ -207,7 +220,7 @@ public class EscapeManager : MonoBehaviour
                 break;
 
             case 9:
-                if(answer.text.ToLower() == "fcbg")
+                if(answer.text.ToLower() == answer9)
                 {
                     CorrectResponseCheckpoint();
                     break;       
@@ -216,7 +229,7 @@ public class EscapeManager : MonoBehaviour
                 break;
 
             case 10:
-                if(answer.text.ToLower() == "cab")
+                if(answer.text.ToLower() == answer10)
                 {
                     CorrectResponseCheckpoint();
                     break;       
@@ -225,7 +238,7 @@ public class EscapeManager : MonoBehaviour
                 break;
 
             case 11:
-                if(answer.text.ToLower() == "dhba")
+                if(answer.text.ToLower() == answer11)
                 {
                     CorrectResponse();
                     break;       
@@ -234,7 +247,7 @@ public class EscapeManager : MonoBehaviour
                 break;
 
             case 12:
-                if(answer.text.ToLower() == "cefdba")
+                if(answer.text.ToLower() == answer12)
                 {
                     CorrectResponse();
                     break;       
@@ -243,7 +256,7 @@ public class EscapeManager : MonoBehaviour
                 break;
 
             case 13:
-                if(answer.text.ToLower() == "acrqpo")
+                if(answer.text.ToLower() == answer13)
                 {
                     CorrectResponse();
                     GameOver();

@@ -2105,6 +2105,19 @@ MonoBehaviour:
   endScreen: {fileID: 1627138796}
   gameTime: {fileID: 314275000}
   rank: {fileID: 394751157}
+  answer1: b
+  answer2: 23
+  answer3: abca
+  answer4: australiaka32.7
+  answer5: ihdo
+  answer6: bbaacabbba
+  answer7: b
+  answer8: cde
+  answer9: fcbg
+  answer10: cab
+  answer11: dhba
+  answer12: cefdba
+  answer13: acrqpo
 --- !u!4 &241190573
 Transform:
   m_ObjectHideFlags: 0
