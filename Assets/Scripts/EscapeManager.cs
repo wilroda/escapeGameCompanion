@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine;
@@ -42,6 +43,10 @@ public class EscapeManager : MonoBehaviour
     public string answer11;
     public string answer12;
     public string answer13;
+
+    char[] answer6Characters = new char[10];
+    char[] answer4Characters = new char[4];
+
     void Start()
     {
         // Set Mission 1 from the start.
@@ -49,10 +54,124 @@ public class EscapeManager : MonoBehaviour
         BriefUpdate(missionCount);
     }
 
-
     void Update()
     {
         UpdateTimerUI();
+    }
+
+    public void Answer4Check()
+    {
+        if(answer4Characters[0] == 'A' | answer4Characters[0] == 'B')
+        {
+            if(answer4Characters[1] == 'B')
+            {
+                if(answer4Characters[2] == 'C')
+                {
+                    if(answer4Characters[3] == 'A' | answer4Characters[3] == 'B')
+                    {
+                        CorrectResponse();
+                    }
+                    else
+                    {
+                        InvalidResponse();
+                    }
+                }
+                else
+                {
+                    InvalidResponse();
+                }
+            }
+            else
+            {
+                InvalidResponse();
+            }
+        }
+        else
+        {
+            InvalidResponse();
+        }
+    }                                           
+                                            
+    public void Answer6Check()
+    {
+        if(answer6Characters[0] == 'B')
+        {
+            if(answer6Characters[1] == 'B')
+            {
+                if(answer6Characters[2] == 'A' | answer6Characters[2] == 'B')
+                {
+                    if(answer6Characters[3] == 'A' | answer6Characters[3] == 'B')
+                    {
+                        if(answer6Characters[4] == 'C')
+                        {
+                            if(answer6Characters[5] == 'A' | answer6Characters[5] == 'B')
+                            {
+                                if(answer6Characters[6] == 'B')
+                                {
+                                    if(answer6Characters[7] == 'B')
+                                    {
+                                        if(answer6Characters[8] == 'B')
+                                        {
+                                            if(answer6Characters[9] == 'A' | answer6Characters[9] == 'B')
+                                            {
+                                                CorrectResponse();       
+                                            }
+                                            else
+                                            {
+                                                InvalidResponse();
+                                            }
+                                        }
+                                        else
+                                        {
+                                            InvalidResponse();
+                                        }
+                                    }
+                                    else
+                                    {
+                                        InvalidResponse();
+                                    }
+                                }
+                                else
+                                {
+                                    InvalidResponse();
+                                }
+                            }
+                            else
+                            {
+                                InvalidResponse();
+                            }
+                        }
+                        else
+                        {
+                            InvalidResponse();
+                        }
+                    }
+                    else
+                    {
+                        InvalidResponse();
+                    }
+                }
+                else
+                {
+                    InvalidResponse();
+                }
+            }
+            else
+            {
+                InvalidResponse();
+            }
+        } 
+        else
+        {
+            InvalidResponse();
+        }
+    }
+    public void AnswerToCharacters(string text, char[]characterArray)
+    {
+        using (StringReader sr = new StringReader(text))
+        {
+            sr.Read(characterArray,0,text.Length);
+        }
     }
 
     public void UpdateTimerUI(){
@@ -78,17 +197,17 @@ public class EscapeManager : MonoBehaviour
         {
             // Mission 1
             case 1:
-            briefing.text = "Wow, we just got hit by a stray meteor, but I'm glad to see everyone is alive and well!\n\nStatus report says power is out on most ship's systems...\n\nCan't comunicate back with earth, our atenna is broken.\nMission specialists, your first assignment is to power the robotics sector, with that up and running we can fix the atenna.";
+            briefing.text = "Mission Specialists, follow the mission plan and stay alert!";
             break;
 
             // Mission 2
             case 2:
-            briefing.text = "Robotics sector is online, good job!\n\nWe need to contact earth for a status update.\n\nUse the ship's arms to fix the antenna";
+            briefing.text = "Robotics Sector online, great job!\n\nWe need to contact earth for a status update.";
             break;
 
             // Mission 3
             case 3:
-            briefing.text = "Good job Mission Specialists!\n\nThe antenna is fixed and we are very close to being able to contact earth.\n\nBefore we can do that, your next assignment is to route the power to the communication sector";
+            briefing.text = "Good job Mission Specialists!\n\nThe antenna is fixed and we are very close to being able to contact earth.";
             break;
 
             // Mission 4
@@ -103,12 +222,12 @@ public class EscapeManager : MonoBehaviour
 
             // Mission 6
             case 6:
-            briefing.text = "Ok Mission Specialists, we need to increase our fuel so that we can get the ship into the earth's orbit\n\nLet's power the final sectors so that we can create the necessary fuel to continue.";
+            briefing.text = "Ok Mission Specialists, we need to increase our fuel so that we can get the ship into the earth's orbit";
             break;
 
             // Mission 7 Checkpoint 2
             case 7:
-            briefing.text = "It seems the necessary items for fuel production are on a sector that became inaccessible to the crew after the meteor impact.\n\nHowever you can use a remote controlled robot to acess the storage room, you just need to program its route with the available move set.";
+            briefing.text = "It seems the necessary items for fuel production are on a sector that became inaccessible to the crew after the meteor impact.";
             break;
 
             // Mission 7 Checkpoint 3
@@ -166,13 +285,10 @@ public class EscapeManager : MonoBehaviour
                 break;       
 
             case 3:
-                if(answer.text.ToLower() == answer3)
-                {
-                    CorrectResponse();
-                    break;       
-                }
-                InvalidResponse();
-                break;   
+                answer.text.ToLower();
+                AnswerToCharacters(answer.text, answer4Characters);
+                Answer4Check();
+                break;
                 
             case 4:
                 if(answer.text.ToLower() == answer4)
@@ -193,13 +309,11 @@ public class EscapeManager : MonoBehaviour
                 break; 
 
             case 6:
-                if(answer.text.ToLower() == answer6)
-                {
-                    CorrectResponse();
-                    break;       
-                }
-                InvalidResponse();
+                answer.text.ToLower();
+                AnswerToCharacters(answer.text, answer6Characters);
+                Answer6Check();
                 break;
+
             
             case 7:
                 if(answer.text.ToLower() == answer7)
@@ -307,7 +421,7 @@ public class EscapeManager : MonoBehaviour
     {
         keyboardSound.Play();
         invalidSound.Play();
-        minuteCount += 3;
+        //minuteCount += 3;
         ClearText(answer);
         Debug.Log("Invalide response, try again!");
     }
@@ -354,12 +468,7 @@ public class EscapeManager : MonoBehaviour
         else
             rank.text = "adrift";
         
-
         gameScreen.SetActive(false);
-        endScreen.SetActive(true);       
-
-
-        
-        
+        endScreen.SetActive(true);               
     }
 }
